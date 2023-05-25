@@ -1,0 +1,43 @@
+<html>
+    <head>
+       <title>User details</title>
+       <style>
+        
+        body{
+        background-color:lavender;
+        }
+        form {
+   
+      padding: 100px;
+      border: 2px solid black;
+      border-radius: 5px;
+       max-width: 400px;
+
+
+    }
+       </style>
+    </head>
+    <body >
+      
+          <form method="post" align="center" action="validation.php">
+            <input type="text" id="uname" name="fname" placeholder="enter user first name" required><br><br>
+            <input type="text" id="name" name="lname" placeholder="enter user last name" required><br><br>
+            <input type="email" id="mail" name="mailid" placeholder="enter EmailId" required><br><br>
+            <input type="password" id="pwd" name="pwd" placeholder="enter password" required><br><br>
+            <input type="number" id="phoneno" name="contact" placeholder="enter user contact number"><br><br>
+            <label for="year">Choose year:</label>
+            <select id="year" name="yearofStudy">
+                 <option value="FirstYear">1</option>
+                 <option value="SecondYear">2</option>
+                 <option value="ThirdYear">3</option>
+                 <option value="FinalYear">4</option>
+            </select><br><br>
+            <label for="address">Address:</label><br>
+            <textarea id="address" name="add" rows="5"></textarea><br><br>
+            <label for="pro_pic">Upload Profile:</label>
+            <input type="file" id="propic" name="pic" ><br><br>
+            <input style="background-color: grey;color: whitesmoke;"    type="submit" value="Submit">
+          </form>
+        
+    </body>
+</html>
